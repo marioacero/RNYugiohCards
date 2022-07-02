@@ -2,9 +2,10 @@ import { StyleSheet } from 'react-native';
 import { COLORS } from 'src/utils/colors';
 
 const styles = StyleSheet.create({
-  container: {
-    backgroundColor: COLORS.background,
-    height: '100%',
+  main: {
+    width: '100%',
+    borderBottomColor: COLORS.background,
+    borderBottomWidth: StyleSheet.hairlineWidth,
   },
 });
 

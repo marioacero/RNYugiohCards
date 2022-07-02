@@ -8,7 +8,7 @@ const Axios = axios.create({
 
 Axios.interceptors.request.use(
   async (config) => {
-    config.baseURL = 'https://iuvo-dev.nn.r.appspot.com';
+    config.baseURL = 'https://db.ygoprodeck.com/api/v7';
     config.proxy = false;
     return config;
   },
