@@ -54,7 +54,18 @@ const styles = StyleSheet.create({
   raceText: {
     textAlign: 'center',
     width: '100%',
-    color: 'white',
+    color: COLORS.whiteSand,
+  },
+  typeContainer: {
+    flexDirection: 'row',
+  },
+  chevron: {
+    paddingTop: 16,
+    marginRight: 8,
+  },
+  image: {
+    width: 60,
+    height: 60,
   },
 });
 

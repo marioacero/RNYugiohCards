@@ -7,7 +7,8 @@ import useCards from 'src/hooks/useCards';
 import styles from './HomeScreen.styles';
 
 const HomeScreen = () => {
-  const { data, isLoading, error } = useCards();
+  const { useFetchCards } = useCards();
+  const { data, isLoading } = useFetchCards();
 
   const renderCard = ({ item }: ListRenderItemInfo<Card>) => {
     return <CardTile item={item} />;

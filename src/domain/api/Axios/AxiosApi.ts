@@ -6,6 +6,10 @@ class AxiosApi implements ApiMethods {
   async fetchCards(): Promise<AxiosResponse<any>> {
     return await Axios.get('cardinfo.php');
   }
+
+  async searchCard(text: string): Promise<AxiosResponse<any>> {
+    return await Axios.get('cardinfo.php', { params: { fname: text } });
+  }
 }
 
 export default new AxiosApi();

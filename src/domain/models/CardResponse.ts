@@ -11,8 +11,8 @@ export interface Card {
   def?: number;
   level?: number;
   race: string;
-  atribute?: string;
-  card_sets: CardSet[];
+  attribute?: string;
+  card_sets?: CardSet[];
   card_images: CardImage[];
 }
 
