@@ -27,7 +27,7 @@ export const HomeStack = () => (
     <Stack.Screen
       name="Search"
       component={SearchScreen}
-      options={{ presentation: 'modal', headerShown: false }}
+      options={{ headerShown: false }}
     />
     <Stack.Screen
       name="Details"

@@ -41,6 +41,11 @@ Note if this if your first time running an Android project, you'll need to regis
 
 You can also run the app directly from Android Studio by opening the project in Android Studio and clicking on the play icon.
 
+### Tests
+```sh
+yarn test
+```
+
 ### Dependencies
 
 - React navigation (https://reactnavigation.org)
