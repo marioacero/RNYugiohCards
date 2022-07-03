@@ -2,9 +2,6 @@ import { Dimensions, StyleSheet } from 'react-native';
 import { COLORS } from 'src/utils/colors';
 
 const styles = StyleSheet.create({
-  container: {
-    // paddingHorizontal: 16,
-  },
   title: {
     color: COLORS.cian,
     textAlign: 'center',

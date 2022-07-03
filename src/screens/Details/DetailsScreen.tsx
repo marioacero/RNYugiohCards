@@ -54,7 +54,7 @@ const DetailsScreen: FC<HomeStackNavProps<ROUTES.Details>> = ({
   return (
     <SafeAreaView>
       <ScrollView>
-        <View style={styles.container}>
+        <View>
           <Text style={styles.title}>{item.name}</Text>
           <View style={styles.imageContainer}>
             <FastImage

@@ -1,8 +1,8 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import SearchScreen from 'src/screens/Search/SearchScreen';
+import SearchScreen from 'src/screens/Search';
 import TabNavigator from './TabNavigator';
-import DetailsScreen from 'src/screens/Details/DetailsScreen';
+import DetailsScreen from 'src/screens/Details';
 import { COLORS } from 'src/utils/colors';
 
 const Stack = createNativeStackNavigator<any>();
