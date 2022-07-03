@@ -54,14 +54,18 @@ const CardTile: FC<CardTileProps> = ({ item }) => {
         <View style={styles.infoContainer}>
           {item.level ? (
             <>
-              <Text style={styles.levelText}>LVL {item.level}</Text>
+              <Text testID={'card-level'} style={styles.levelText}>
+                LVL {item.level}
+              </Text>
               <Text
                 numberOfLines={2}
                 style={styles.atk}
               >{`ATK ${item.atk} / ${item.def} DEF`}</Text>
             </>
           ) : (
-            <Text style={styles.raceText}>{item.race}</Text>
+            <Text testID={'card-race'} style={styles.raceText}>
+              {item.race}
+            </Text>
           )}
         </View>
       </View>

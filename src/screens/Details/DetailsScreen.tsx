@@ -95,22 +95,19 @@ const DetailsScreen: FC<HomeStackNavProps<ROUTES.Details>> = ({
               <Text style={styles.statsText}>ATK: {item.atk}</Text>
               <Text style={styles.statsText}>DEF: {item.def}</Text>
             </View>
-            {item.card_sets ? (
-              <View style={styles.cardSetContainer}>
-                <Text style={styles.setTitle}>Find this card into: </Text>
-                {item.card_sets.map((card, index) => {
-                  return (
-                    <Text
-                      key={`${card.set_code}-${index}`}
-                      style={styles.setText}
-                    >
-                      {`\u2022 ${card.set_name}`}
-                    </Text>
-                  );
-                })}
-              </View>
-            ) : null}
           </>
+        ) : null}
+        {item.card_sets ? (
+          <View style={styles.cardSetContainer}>
+            <Text style={styles.setTitle}>Find this card into: </Text>
+            {item.card_sets.map((card, index) => {
+              return (
+                <Text key={`${card.set_code}-${index}`} style={styles.setText}>
+                  {`\u2022 ${card.set_name}`}
+                </Text>
+              );
+            })}
+          </View>
         ) : null}
       </ScrollView>
     </SafeAreaView>
