@@ -2,6 +2,12 @@
 
 iOS and Android apps for YugiohCards
 
+
+
+https://user-images.githubusercontent.com/18216713/177061165-c67dee92-8c5a-4503-ac07-19fd9d5faf1c.mp4
+
+
+
 ## Local setup
 
 Follow the [React Native CLI Quickstart](https://reactnative.dev/docs/environment-setup) for the relevant environment up to (but not including) "Creating a new application".
